@@ -1,0 +1,172 @@
+﻿div {
+	box-sizing: border-box;
+	color: #fff;
+}
+html, body {
+	margin:0;
+	padding:0;
+	background: silver url("grey_texture.jpg") repeat-y;
+	background-size:100%;
+}
+.form {
+  position:relative;
+  margin: auto;
+  margin-top:50px;
+  padding:15px;
+  width: 345px;
+  height: 435px;
+  background: rgb(226,131,175);
+  border-radius: 20px;
+  box-shadow: inset 0px 5px 5px 5px rgb(192,95,138), 0px 2px 2px 0px grey;
+  border: 1px solid grey;
+   -moz-user-select: none;   /*убираем синее выделение при двойном клике*/
+  -khtml-user-select: none;
+  user-select: none;   
+}
+p {
+	margin:0;
+	padding:0;
+	font-family:arial;
+	font-size: 20px;
+}
+.window {
+  position:relative;
+  box-sizing:border-box;
+  background: rgb(160,160,160);
+  background: linear-gradient(to bottom,rgb(200,200,200),rgb(160,160,160));
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid rgb(192,95,138);
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 5px rgb(232,153,189);
+  width:100%;
+  height: 76px;
+  margin-top: 10px;
+}
+.main {
+  box-sizing:border-box;
+  height:50px;
+  margin-top:-10px;
+  text-align: right;
+  padding: 3px;
+  padding-top:0;
+  font-size:52px;
+  font-family: courier;
+  text-align: right;
+  color: rgb(80,80,80);
+  overflow: hidden;
+}
+.operand {
+	box-sizing:border-box;
+	height:30px;
+	margin:0;
+	padding:5px;
+	padding-right:10px;
+	text-align: right;
+	color: rgb(140,140,140);
+	font-size: 18px;
+	overflow: hidden;
+}
+.buttons {
+	margin-top: 36px;
+	padding:10px;
+}
+
+.ce,.c,.percent,.divider {
+	display: inline-block;
+	box-sizing: padding-box;
+	height:32px;
+	width:51px;
+	text-align:center;
+	font-family:arial;
+	font-weight:bold;
+	font-size:24px;
+	background:rgb(182,182,182);
+	border-radius:50%;
+	margin-right:25px;
+	box-shadow: 0px 3px 3px 2px grey;/*0 2 8 2 */
+	cursor:pointer;
+}
+.divider {margin-right:0;}
+
+.numerals {
+	display:inline-block;
+	background: rgb(182,182,182);
+	margin-top:11px;
+	margin-left:-25px;
+	height: 220px;
+	width:257px;
+	padding:7px;
+	padding-left:17px;
+	padding-right:0;
+	font-family:arial;
+	border-radius: 0px 20px;
+	box-shadow: inset 2px 0px 2px 2px rgb(160,160,160);
+	border:1px solid grey;
+}
+.mainFour,.mainOne,.mainNull {
+	margin-top:10px;
+}
+.seven,.four,.one,.null {
+	display:inline-block;
+	padding-top:3px;
+	background: rgb(226,131,175);
+	color: #fff;
+	height:40px;
+	width:67px;
+	margin-right:9px;
+	border-radius:10px;
+	text-align: center;
+	font-size:32px;
+	font-weight:bold;
+	box-shadow: 0px 3px 3px 2px grey;
+	cursor: pointer;
+}
+.mainAside {
+	display:inline-block;
+	vertical-align:top;
+	padding-top:13px;
+	padding-left:5px;
+}
+.aside,.asideBig {
+	height:32px;
+	width:51px;
+	margin-top:9px;
+	margin-bottom:21px;
+	text-align:center;
+	font-family:arial;
+	font-weight:bold;
+	font-size:24px;
+	background:rgb(182,182,182);
+	border-radius:50%;
+	box-shadow: 0px 3px 3px 2px grey;
+	cursor:pointer;
+}
+.asideBig {
+	height:80px;
+	padding-top:22px;
+	border-radius: 40%;
+	width:49px;
+}
+.Times {padding-top:2px;}
+footer{
+	width:100%;
+	height:40px;
+	margin-top: 50px;
+	text-align:center;
+	color: rgb(70,70,70);
+	font-size:15px;
+}
+footer p {
+	margin:0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+@media only screen and (max-width: 770px) {
+	.form {margin-top:40px;}
+	footer {margin-top:40px;}
+	footer p {font-size:17px;}
+}
+@media only screen and (max-width: 370px) {
+	html, body {background-image: none;}
+}

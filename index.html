@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> JavaScript Calculator</title>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js" async></script>
+				
+		<link rel="stylesheet" href="style.css">
+				
+	</head>
+	
+	<body>
+		<div class="form" id="calculator"> 
+			<p> JavaScript Calculator</p>
+			<div class="window"> 
+				<p class="operand"></p>
+				<p class="main" id ="tempValue"></p>
+			</div>
+			<div class="buttons">
+				<div class="firstLine"> 
+					<div class="ce" data-overWriteCe> ce </div>
+					<div class="c" data-overWriteC> c </div>
+					<div class="percent" data-percent> &percnt; </div>
+					<div class="divider" data-operator> &divide; </div>
+				</div>
+				<div class="numerals"> 
+					<div class="mainSeven"> 
+						<div class="seven Seven" data-numerals> 7 </div>
+						<div class="seven Eight" data-numerals> 8 </div>
+						<div class="seven Nine" data-numerals> 9 </div>
+					</div>
+					<div class="mainFour">
+						<div class="four Four" data-numerals> 4</div>
+						<div class="four Five" data-numerals> 5</div>
+						<div class="four Six" data-numerals> 6</div>
+					</div>
+					<div class="mainOne">
+						<div class="one One" data-numerals> 1</div>
+						<div class="one Two" data-numerals> 2</div>
+						<div class="one Three" data-numerals> 3</div>
+					</div>
+					<div class="mainNull">
+						<div class="null Null" data-numerals> 0</div>
+						<div class="null Dot" data-numerals> &period; </div>
+						<div class="null Equals" data-operator> &equals; </div>
+					</div>
+				</div>
+				<div class="mainAside"> 
+					<div class="aside Times" data-operator> &times; </div>
+					<div class="aside Minus" data-operator> - </div>
+					<div class="asideBig" data-operator> &plus; </div>
+				</div>
+			</div>
+			
+		</div>
+		<footer><p>&copy; 2017 Marina Osadcha</p></footer>
+	</body>
+</html>
